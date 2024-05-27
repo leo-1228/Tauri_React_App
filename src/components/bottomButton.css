@@ -1,0 +1,26 @@
+
+
+.log-out-button{
+    border-top: 1px solid #ece200;
+    border-bottom: 1px solid #a39c00;
+    border-left: 1px solid #d3ca01;
+    border-right: 1px solid #cbc300;
+    color: #ede300;
+    width: 80%;
+    height: 31px;
+    background-color: #151817;
+    font-size: 13px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-out-button>span{
+    line-height: 1;
+}
+.log-out-button>svg{
+    margin-left: 7px;
+    height: 15px;
+    width: 15px;
+}

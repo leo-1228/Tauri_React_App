@@ -1,0 +1,27 @@
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+    color: white;
+    height: 36px;
+    border-radius: 12px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.temp div{
+    flex-grow: 1;
+}
+
+.temp input{
+    border: 0px;
+    outline: 0px;
+    color: white;
+    background-color:#282828 ;
+    font-size: 15px;
+    flex-grow: 1;
+}
