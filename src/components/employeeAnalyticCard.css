@@ -1,0 +1,43 @@
+.an-employ-card{
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+}
+.out-div{
+    border: 1px solid #282828;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: row;
+}
+
+.user-info{
+    width: 100%;
+}
+
+.user-info> h5{
+    color: #d9d9d9;
+}
+
+.user-info>span{
+    color: #8a8a8a;
+    font-size: 10px;
+}
+.an-employ-card button{
+    border: none;
+    outline: none;
+    background-color: #151817;
+    cursor: pointer;
+}
+
+.user-info{
+    margin-left: 5px;
+}
+
+.cpu-tray {
+    width: 20%;
+}
