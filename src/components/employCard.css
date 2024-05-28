@@ -1,9 +1,33 @@
 .employ-card{
     display: flex;
-    margin: 5px;
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #282828;
+    width: 90%;
+    border-radius: 10px;
 }
 
 .user-info{
     width: 80%;
 }
 
+.user-info> h5{
+    color: #d9d9d9;
+}
+
+.user-info>span{
+    color: #8a8a8a;
+    font-size: 10px;
+}
+.employ-card button{
+    border: none;
+    outline: none;
+    background-color: #151817;
+    cursor: pointer;
+}
+
+.user-info{
+    margin-left: 5px;
+}

@@ -2,15 +2,23 @@ import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 
-import LineEdit from "../../components/lineEdit.jsx";
-import NumberEdit from "../../components/numberEdit.jsx";
 import BottomButton from "../../components/bottomButton.jsx";
+import EmployCard from "../../components/employCard.jsx";
 
 import "./index.css";
 
 import ArrowLeftIcon from '../../assets/arrow-left-2.svg'
 
 function App() {
+
+    const [employees, setEmployees] = useState([
+        {name:"Maya Patel", job:"Software Enginner"},
+        {name:"Evelyn Garcia", job:"Marketing Manager"},
+        {name:"Chloe Bennett", job:"Graphic Designer"},
+        {name:"Omar Khan", job:"Civil Enginner"},
+        {name:"Noah Davis", job:"High School Teacher"},
+        {name:"Ava Lee", job:"Customer Service Represantative"}
+    ])
 
   return (
     <div className="container">
@@ -20,20 +28,12 @@ function App() {
         </button>
         <span>Manage Employees</span>
       </div>
-      <div className="line-edit-group1">
-        <LineEdit placeText={"Manage Billing"}/>
-        <LineEdit placeText={"Contact Us"}/>
+      <div class="card-group">
+        {
+            employees.map(employee=><EmployCard name = {employee.name} job={employee.job}/>)
+        }
       </div>
-      <div className="line-edit-group2">
-        <LineEdit placeText={"Manage Employees"}/>
-        <LineEdit placeText={"Employees Analytics"}/>
-        <span>Get quick information on your team members usage</span>
-      </div>
-      <div className="line-edit-group3">
-        <NumberEdit placeText={"Text Size"}/>
-        <span>Atom Copilot interface text size</span>
-      </div>
-      <div class="log-out">
+      <div class="add-emp">
         <BottomButton placeText={"Add Employee"} type={2} />
       </div>
     </div>
